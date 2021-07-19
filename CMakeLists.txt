@@ -118,7 +118,7 @@ if (MSVC)
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP")
         target_compile_options(MethaneBuildOptions INTERFACE
             # Set maximum warnings level and treat warnings as errors
-            /W4 /WX
+            /W4
             # Disable useless warnings
             /wd4250 # - C4250: inheritance via dominance (used only with abstract interfaces)
             /wd4324 # - C4324: structure was padded due to alignment specifier
